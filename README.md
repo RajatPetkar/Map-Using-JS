@@ -32,9 +32,9 @@ https://mymaptyproject.netlify.app/
 To view How website Look's Like click on the above link
 ## Screenshots
 
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
+![App Screenshot](https://github.com/RajatPetkar/Map-Using-JS/blob/main/MAPTY%20PROJECT/ss/Screenshot%20(25).png)
+![App Screenshot](https://github.com/RajatPetkar/Map-Using-JS/blob/main/MAPTY%20PROJECT/ss/Screenshot%20(26).png)
+![App Screenshot](https://github.com/RajatPetkar/Map-Using-JS/blob/main/MAPTY%20PROJECT/ss/Screenshot%20(27).png)
 
 ## Contributing
 
