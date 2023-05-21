@@ -75,6 +75,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const sidebar = document.querySelector('.sidebar');
 
 class App {
   #map;
@@ -129,10 +130,11 @@ class App {
 
   _showForm(mapE) {
     this.#mapEvent = mapE;
-    form.classList.remove('hidden');
+    form.classList.remove('hidden')
     inputDistance.focus();
+    sidebar.classList.toggle('hidden')
   }
-
+  
   _hideForm() {
     // Empty inputs
     inputDistance.value =
@@ -142,7 +144,9 @@ class App {
         '';
 
     form.style.display = 'none';
+    sidebar.style.display = 'none';
     form.classList.add('hidden');
+    sidebar.classList.add('hidden')
     setTimeout(() => (form.style.display = 'grid'), 1000);
   }
 
@@ -178,7 +182,6 @@ class App {
         !allPositive(distance, duration, cadence)
       )
         return alert('Inputs have to be positive numbers!');
-
       workout = new Running([lat, lng], distance, duration, cadence);
     }
 
